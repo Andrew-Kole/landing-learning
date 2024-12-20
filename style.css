@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*- General */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin-top: 15px;
+}
+
+/*- Header */
+
+.header {
+    padding: 25px 0;
+
+    position: relative;
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 75px;
+    height: 75px;
+}
+
+.header__nav {
+
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__nav a {
+    font-size: 14px;
+    opacity: 0.7;
+
+    transition: opacity 0.3s;
+}
+
+.header__nav a.active {
+    opacity: 1;
+}
+
+.header__nav a:hover {
+    opacity: 0.9;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    width: 165px;
+    height: 50px;
+
+    background-color: #f6762c;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn--small {
+    width: 140px;
+    height: 40px;
+
+    font-size: 12px;
+}
+
+.main {
+
+}
+
+/*- Welcome */
+
+.welcome {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin-top: -125px;
+    padding: 240px 0;
+
+    background-image: url("images/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__text {
+    width: 550px;
+}
+
+.welcome__subtitle {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.welcome__title {
+    font-size: 58px;
+}
+
+.welcome__description {
+    margin: 40px 0;
+
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/*- Cards */
+
+.food-list {
+    padding: 100px 0;
+}
+
+.food-list .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 10px;
+}
+
+.food-list__card {
+    width: 260px;
+    background: #312F30;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.food-list__img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.food-list__text-wrapper {
+    padding: 30px 20px;
+}
+
+.food-list__title {
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.food-list__description {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/*- Order */
+
+.order {
+    background: #312F30;
+    padding: 60px 0;
+}
+
+.order .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 90px;
+}
+
+.order__img {
+    max-width: 470px;
+    max-height: 470px;
+    object-fit: cover;
+}
+
+.order__text {
+    max-width: 360px;
+}
+
+.order__title {
+    margin-bottom: 25px;
+    font-size: 44px;
+}
+
+.order__description {
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.order__price {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+}
+
+.order__price--old {
+    font-size: 16px;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.order__price + .order__price {
+    margin-left: 3px;
+}
+
+.order .btn {
+    margin-top: 10px;
+}
+
+/*- Products */
+
+.products {
+    padding: 150px 0;
+}
+
+.products .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product__card {
+    box-sizing: border-box;
+    width: 555px;
+    height: 300px;
+
+    padding: 60px 30px 60px 290px;
+    background-color: grey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product__card:nth-child(even) {
+    padding-left: 30px;
+    padding-right: 290px;
+}
+
+.product__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.product__description {
+    margin-bottom: 10px;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.product__price {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+}
+
+.product__price + .product__price {
+    margin-left: 5px;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.products .btn {
+    margin-top: 10px;
+}
+
+.card-queen {
+    background-image: url('images/latte.jpg');
+}
+
+.card-pizza {
+    background-image: url("images/pizza-card.jpg");
+}
+
+.card-burger {
+    background-image: url("images/burger-card.jpg");
+}
+
+.card-papa {
+    background-image: url("images/taco-card.jpg");
+}
